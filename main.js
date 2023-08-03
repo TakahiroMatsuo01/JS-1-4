@@ -4,6 +4,7 @@ const taskContent = ['机を片付ける','牛乳を買う','散歩する']
 const taskObj = {genreName:taskGenre,contentName:taskContent}
 
 const add = () => {
+    
     console.log(titleName);
     for(let i = 0; i<taskObj.genreName.length || i<taskObj.contentName.length; i++){
         console.log(taskObj.genreName[i]+''+':'+''+taskObj.contentName[i]);
@@ -14,7 +15,7 @@ const add = () => {
     const genrePrompt = prompt('ジャンルを入力してください。')
     taskGenre.push(taskPrompt);
     taskContent.push(genrePrompt);
-    
+
     console.log(titleName);
     for(let i = 0; i<taskObj.genreName.length || i<taskObj.contentName.length; i++){
         console.log(taskObj.genreName[i]+''+':'+''+taskObj.contentName[i]);
