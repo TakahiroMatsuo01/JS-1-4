@@ -8,18 +8,18 @@ const add = () => {
     
     console.log(titleName);
     for(let i = 0; i<taskObj.genreName.length || i<taskObj.contentName.length; i++){
-        console.log(taskObj.genreName[i]+''+':'+''+taskObj.contentName[i]);
+        console.log('[内容]'+taskObj.contentName[i]+'、'+'[ジャンル]'+taskObj.genreName[i]);
     }
 
     const comformDialog = prompt('「確認、追加、削除、終了のいずれかを入力してください。」');
     const taskPrompt = prompt('タスクを入力してください。')
     const genrePrompt = prompt('ジャンルを入力してください。')
-    taskGenre.push(taskPrompt);
-    taskContent.push(genrePrompt);
+    taskGenre.push(genrePrompt);
+    taskContent.push(taskPrompt);
 
     console.log(titleName);
     for(let i = 0; i<taskObj.genreName.length || i<taskObj.contentName.length; i++){
-        console.log(taskObj.genreName[i]+''+':'+''+taskObj.contentName[i]);
+        console.log('[内容]'+taskObj.contentName[i]+'、'+'[ジャンル]'+taskObj.genreName[i]);
     } 
 }
 
