@@ -1,6 +1,6 @@
 const titleName = '===============================\n現在持っているタスク一覧\n===============================';
 
-const taskObj = [{'掃除':'机を片付ける'}, {'買い物':'牛乳を買う'}, {'運動':'散歩する'}];
+const taskObj = [{genre:'掃除',task:'机を片付ける'}, {genre:'買い物',task:'牛乳を買う'}, {genre:'運動',task:'散歩する'}];
 
 const add = () => {
     console.log(titleName);
